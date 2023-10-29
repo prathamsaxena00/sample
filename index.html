@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SiteSpark</title>
+</head>
+<body>
+   <nav>
+    <ul class="sidebar">
+        <li><a href="#" onclick="hideSidebar()" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Book Now</a></li>
+        <li><a href="#">Contact us</a></li>
+        
+    </ul>
+    <ul >
+        <li ><a href="#">SiteSpark</a></li class=".hideOnMobile">
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About us</a></li>
+        <li class="hideOnMobile"><a href="#">Book Now</a></li>
+        <li class="hideOnMobile"><a href="#">Contact us</a></li>
+        <li class="menu-btn"><a href="#" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+   </nav>
+    <div class="banner">
+<div class="banitem">
+    <img src="logoo.jpg" alt="" class="lg">
+    <h2><b>Build Resume and Portfolios</b></h2>
+
+</div>
+<img src="ban.png" class="banimg" alt="">
+    </div>
+   <script>
+    function showSidebar(){
+        const sidebar=document.querySelector('.sidebar');
+        sidebar.style.display='flex';
+    }
+    function hideSidebar(){
+        const sidebar1=document.querySelector('.sidebar');
+        sidebar1.style.display='none';
+    }
+   </script>
+</body>
+</html>
